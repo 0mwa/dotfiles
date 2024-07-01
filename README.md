@@ -56,7 +56,7 @@ List of programs and tools I use.
 
 [<img src="./img/workflow.gif" align="right" width="350" vertical-align="center">](https://x.com/MasonLindroth)
 
-Component           | Program                                                                                                         |
+Component           | Program                                                                                                        |
 |-------------------|----------------------------------------------------------------------------------------------------------------|
 | Tile Compositer   | [hyprland](https://github.com/hyprwm/Hyprland)                                                                 |
 | Terminal          | [kitty](https://github.com/kovidgoyal/kitty)                                                                   |
@@ -70,8 +70,6 @@ Component           | Program                                                   
 | Lockscreen        | [hyprlock](https://github.com/hyprwm/hyprlock)                                                                 |
 | Login Menu        | [sddm](https://github.com/sddm/sddm) / [theme](https://github.com/stepanzubkov/where-is-my-sddm-theme)         |
 | Visualiser        | [cava](https://github.com/karlstav/cava)                                                                       |
-| Reader            | [zathura](https://github.com/pwmt/zathura)                                                                     |
-| Etc               | [cbonsai](https://github.com/mhzawadi/homebrew-cbonsai), [termdown](https://github.com/trehn/termdown)         |
 
 <br>
 
@@ -89,7 +87,19 @@ Component           | Program                                                   
 - Cursor
   - [Bibata Modern Ice](https://github.com/ful1e5/Bibata_Cursor?tab=readme-ov-file)
 - BootLoader
-  - systemd-boot
+  - [Systemd-boot](https://github.com/systemd/systemd/blob/main/src/boot/efi/boot.c)
+- Discord
+  - [Vencord](https://github.com/Vendicated/Vencord) / [Midnight theme (Modified)](https://github.com/refact0r/midnight-discord)
+- Spotify
+  - [Spicetify](https://github.com/spicetify/cli) / [TUI-like theme (Modified)](https://github.com/spicetify/spicetify-themes/tree/master/text)
+- Image viewer
+  - [Imv](https://github.com/eXeC64/imv)
+- Reader
+  - [Zathura](https://github.com/pwmt/zathura) 
+- Etc
+  - [Cbonsai](https://github.com/mhzawadi/homebrew-cbonsai)
+  - [Cmatrix](https://github.com/abishekvashok/cmatrix)
+  - [Termdown](https://github.com/trehn/termdown)
 
 </details>
 
