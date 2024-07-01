@@ -1,0 +1,388 @@
+/*
+ * vim: ft=less
+*/
+
+@define-color noti-bg-focus rgba(0, 0, 0, 0);
+@define-color sep-color transparent;
+
+* {
+  all: unset;
+  font-family: JetBrainsMono Nerd Font, monospace;
+  font-size: 12px;
+}
+
+.notification-row {
+  outline: none;
+}
+
+.notification-row:focus,
+.notification-row:hover {
+  background: @noti-bg-focus;
+}
+
+.notification {
+  border-radius: 5px;
+  margin: 6px 12px;
+  box-shadow: none;
+  padding: 0;
+  min-height: 50px;
+}
+
+.notification label {
+  padding-left: 10px;
+  font-size: 12px;
+}
+
+.low,
+.normal {
+  background-color: #c8c8c8;
+  padding: 2px 2px 2px 2px;
+  border: none;
+  border-radius: 2px;
+}
+
+.critical {
+  background-color: #a55377;
+  padding: 2px 2px 2px 2px;
+  border: none;
+  border-radius: 2px;
+}
+
+.notification-content {
+  background: transparent;
+  padding: 10px;
+  border-radius: 2px;
+}
+
+.close-button {
+  background: #191919;
+  color: #c8c8c8;
+  text-shadow: none;
+  padding: 0;
+  border-radius: 5%;
+  margin-top: 12px;
+  margin-right: 16px;
+  box-shadow: none;
+  border: none;
+  min-width: 24px;
+  min-height: 24px;
+}
+
+.close-button:hover {
+  box-shadow: none;
+  background: #282828;
+  transition: all 0.15s ease-in-out;
+  border: none;
+}
+
+.notification-default-action {
+  padding: 4px;
+  margin: 0;
+  box-shadow: none;
+  background-color: #121212;
+  border: none;
+  border-bottom: 1px solid @sep-color;
+  color: #c8c8c8;
+  transition: all 0.15s ease-in-out;
+}
+
+.notification-action {
+  border: none;
+  padding: 4px;
+  margin: 0;
+  box-shadow: none;
+  background-color: #282828;
+  color: #c8c8c8;
+  transition: all 0.15s ease-in-out;
+}
+
+.notification-default-action:hover {
+  -gtk-icon-effect: none;
+  background: #121212;
+}
+
+.notification-action:hover {
+  -gtk-icon-effect: none;
+  background: #393939;
+}
+
+.notification-default-action {
+  border-radius: 2px;
+}
+
+/* When alternative actions are visible */
+.notification-default-action:not(:only-child) {
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+
+.notification-action {
+  border-radius: 0px;
+  border-top: none;
+  border-right: none;
+}
+
+/* add bottom border radius to eliminate clipping */
+.notification-action:first-child {
+  border-bottom-left-radius: 10px;
+}
+
+.notification-action:last-child {
+  border-bottom-right-radius: 10px;
+  border-right: 1px solid #c8c8c8;
+}
+
+.inline-reply {
+  margin-top: 8px;
+}
+.inline-reply-entry {
+  background: #121212;
+  color: #c8c8c8;
+  caret-color: #c8c8c8;
+  border: 1px solid #2f88ff;
+  border-radius: 12px;
+}
+.inline-reply-button {
+  margin-left: 4px;
+  background: #121212;
+  border: 1px solid #c8c8c8;
+  border-radius: 12px;
+  color: #c8c8c8;
+}
+.inline-reply-button:disabled {
+  background: initial;
+  color: #ababab;
+  border: 1px solid transparent;
+}
+.inline-reply-button:hover {
+  background: #121212;
+}
+
+.image {
+}
+
+.body-image {
+  margin-top: 6px;
+  background-color: white;
+  border-radius: 12px;
+}
+
+.summary {
+  font-size: 22px;
+  font-weight: bold;
+  background: transparent;
+  color: #c8c8c8;
+  text-shadow: none;
+}
+
+.time {
+  font-size: 16px;
+  font-weight: bold;
+  background: transparent;
+  color: #c8c8c8;
+  text-shadow: none;
+  margin-right: 18px;
+}
+
+.body {
+  font-size: 18px;
+  font-weight: normal;
+  background: transparent;
+  color: #c8c8c8;
+  text-shadow: none;
+}
+
+.control-center {
+  background: rgba(18, 18, 18, 1);
+  padding-bottom: 25px;
+  padding-top: 5px;
+  padding-left: 10px;
+  padding-right: 9px;
+}
+
+.control-center-list {
+  background: transparent;
+}
+
+.control-center-list-placeholder {
+  opacity: 0.5;
+}
+
+.floating-notifications {
+  background: transparent;
+}
+
+/* Window behind control center and on all other monitors */
+.blank-window {
+  background-color: transparent;
+}
+
+/*** Widgets ***/
+
+/* Title widget */
+.widget-title {
+  margin: 8px;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #c8c8c8;
+}
+.widget-title > button {
+  font-size: 20px;
+  font-weight: bold;
+  color: #121212;
+  text-shadow: none;
+  background-color: #c8c8c8;
+  border: none;
+  box-shadow: none;
+  border-radius: 2px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+.widget-title > button:hover {
+  background-color: #a55377;
+}
+
+/* DND widget */
+.widget-dnd {
+  margin: 8px;
+  font-size: 12px;
+  color: #c8c8c8;
+}
+.widget-dnd > switch {
+  font-size: initial;
+  border-radius: 5px;
+  background: #2e2e2e;
+  border: none;
+  box-shadow: none;
+  color: transparent;
+  margin: 0px;
+}
+.widget-dnd > switch:checked {
+  background: #c8c8c8;
+}
+.widget-dnd > switch slider {
+  background: #282828;
+  border-radius: 5px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  min-height: 14px;
+  min-width: 30px;
+  margin: 0px;
+}
+
+/* Label widget */
+.widget-label {
+  margin: 8px;
+}
+.widget-label > label {
+  font-size: 1.1rem;
+}
+
+/* Mpris widget */
+.widget-mpris {
+  /* The parent to all players */
+}
+.widget-mpris-player {
+  padding: 8px;
+  margin: 8px;
+}
+.widget-mpris-title {
+  font-weight: bold;
+  font-size: 1.25rem;
+}
+.widget-mpris-subtitle {
+  font-size: 1.1rem;
+}
+
+/* Buttons widget */
+.widget-buttons-grid {
+  padding: 8px;
+  margin: 8px;
+  border-radius: 12px;
+  background-color: #121212;
+}
+
+.widget-buttons-grid>flowbox>flowboxchild>button{
+  background: #121212;
+  border-radius: 12px;
+}
+
+.widget-buttons-grid>flowbox>flowboxchild>button:hover {
+  background: #121212;
+}
+
+/* Menubar widget */
+.widget-menubar>box>.menu-button-bar>button {
+  border: none;
+  background: transparent;
+}
+
+.AnyName {
+  background-color: #121212;
+  padding: 8px;
+  margin: 8px;
+  border-radius: 10px;
+}
+
+.AnyName>button {
+  background-color: transparent;
+  border: none;
+}
+
+.AnyName>button:hover {
+  background-color: #121212;
+}
+
+.topbar-buttons>button { /* Name defined in config after # */
+  border: none;
+  background: transparent;
+}
+
+/* Volume widget */
+
+.widget-volume {
+  background-color: #121212;
+  padding: 8px;
+  margin: 8px;
+  border-radius: 12px;
+}
+
+.widget-volume>box>button {
+  background: transparent;
+  border: none;
+}
+
+.per-app-volume {
+  background-color: @--noti-bg-alt--;
+  padding: 4px 8px 8px 8px;
+  margin: 0px 8px 8px 8px;
+  border-radius: 12px
+}
+
+/* Backlight widget */
+.widget-backlight {
+  background-color: #121212;
+  padding: 8px;
+  margin: 8px;
+  border-radius: 12px;
+}
+
+/* Title widget */
+.widget-inhibitors {
+  margin: 8px;
+  font-size: 1.5rem;
+}
+.widget-inhibitors > button {
+  font-size: initial;
+  color: #c8c8c8;
+  text-shadow: none;
+  background: #121212;
+  border: 1px solid #2f88ff;
+  box-shadow: none;
+  border-radius: 12px;
+}
+.widget-inhibitors > button:hover {
+  background: #121212;
+}
