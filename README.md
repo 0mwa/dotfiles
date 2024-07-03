@@ -66,13 +66,13 @@ List of programs and tools I use.
 
 [<img src="./img/workflow.gif" align="right" width="350" vertical-align="center">](https://x.com/MasonLindroth)
 
-| Component | Program                                                                                                        |
+| Component | Program                                                                                                                |
 |-------------------|----------------------------------------------------------------------------------------------------------------|
 | Tile Compositer   | [hyprland](https://github.com/hyprwm/Hyprland)                                                                 |
 | Terminal          | [kitty](https://github.com/kovidgoyal/kitty)                                                                   |
 | Shell             | [fish](https://github.com/fish-shell/fish-shell) / [theme](https://github.com/IlanCosman/tide)                 |
 | Fetch             | [fastfetch](https://github.com/fastfetch-cli/fastfetch) / [icon](/.config/fastfetch/pic/earth.png)             |
-| File Manager      | [ranger](https://github.com/ranger/ranger) / [dolphin](https://github.com/KDE/dolphin)                                                                     |
+| File Manager      | [ranger](https://github.com/ranger/ranger) / [dolphin](https://github.com/KDE/dolphin)                         |
 | Editor            | [vscode](https://github.com/microsoft/vscode)                                                                  |
 | Browser           | [vivaldi](https://vivaldi.com)                                                                                 |
 | Bar               | [waybar](https://github.com/Alexays/Waybar)                                                                    |
@@ -80,6 +80,7 @@ List of programs and tools I use.
 | Lockscreen        | [hyprlock](https://github.com/hyprwm/hyprlock)                                                                 |
 | Visualiser        | [cava](https://github.com/karlstav/cava)                                                                       |
 | Login Menu        | [sddm](https://github.com/sddm/sddm) / [theme](https://github.com/stepanzubkov/where-is-my-sddm-theme)         |
+| Wallpaper         | [swww](https://github.com/LGFae/swww) / [img](/img/wallpaper.png)
 
 <br>
 
