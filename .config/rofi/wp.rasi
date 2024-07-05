@@ -1,0 +1,121 @@
+/*****----- Configuration -----*****/
+configuration {
+	drun-display-format:        "{name} [<span weight='light' size='small'><i>({generic})</i></span>]";
+	window-format:              "{w} · {c} · {t}";
+}
+
+/*****----- Global Properties -----*****/
+@import                          "shared/colors.rasi"
+@import                          "shared/fonts.rasi"
+
+* {
+    border-colour:               var(selected);
+    background-colour:           var(background);
+    normal-background:           var(background);
+    normal-foreground:           var(foreground);
+    active-background:           var(active);
+    selected-active-background:  var(urgent);
+}
+
+/*****----- Main Window -----*****/
+window {
+    /* properties for window widget */
+    transparency:                "real";
+    location:                    center;
+    anchor:                      center;
+    width:                       760px;
+    fullscreen:                  false;
+    x-offset:                    0px;
+    y-offset:                    0px;
+
+    /* properties for all widgets */
+    enabled:                     true;
+    margin:                      0px;
+    padding:                     0px;
+    border:                      1px solid;
+    border-radius:               5px;
+    border-color:                @border-colour;
+    cursor:                      "default";
+    background-color:            @background-colour;
+}
+
+/*****----- Main Box -----*****/
+mainbox {
+    enabled:                     true;
+    spacing:                     10px;
+    margin:                      0px;
+    padding:                     30px;
+    border:                      0px solid;
+    border-radius:               0px 0px 0px 0px;
+    border-color:                @border-colour;
+    background-color:            transparent;
+    children:                    [ "listview" ];
+}
+
+/*****----- Inputbar -----*****/
+inputbar {
+    enabled:                     false;
+}
+
+/*****----- Listview -----*****/
+listview {
+    enabled:                     true;
+    columns:                     6;
+    lines:                       5;
+    cycle:                       true;
+    dynamic:                     true;
+    scrollbar:                   false;
+    layout:                      vertical;
+    reverse:                     false;
+    fixed-height:                true;
+    fixed-columns:               true;
+
+    spacing:                     0px;
+    margin:                      0px;
+    padding:                     0px;
+    border:                      0px solid;
+    border-radius:               5px;
+    border-color:                @border-colour;
+    background-color:            transparent;
+    cursor:                      "default";
+}
+
+
+
+/*****----- Elements -----*****/
+element {
+    location:                    center;
+    enabled:                     true;
+    spacing:                     10px;
+    margin:                      0px;
+    padding:                     4px;
+    border:                      0px solid;
+    border-radius:               1px;
+    border-color:                @border-colour;
+    background-color:            transparent;
+    cursor:                      pointer;
+    orientation:                 vertical;
+}
+
+element-icon {
+    background-color:            transparent;
+    size:                        110px;
+    cursor:                      inherit;
+}
+
+element-text {
+    enabled:                     false;
+}
+
+element normal.normal {
+    background-color:            var(normal-background);
+}
+element normal.active {
+    background-color:            var(active-background);
+}
+element selected.normal {
+    background-color:            var(normal-foreground);
+}
+element selected.active {
+    background-color:            var(selected-active-background);
+}

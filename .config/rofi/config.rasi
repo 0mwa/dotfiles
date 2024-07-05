@@ -89,11 +89,11 @@ inputbar {
     enabled:                     true;
     spacing:                     10px;
     margin:                      0px;
-    padding:                     0px 0px 10px 10px;
+    padding:                     10px 10px 10px 10px;
     border:                      0px;
     border-radius:               5px;
     border-color:                @border-colour;
-    background-color:            @background-colour;
+    background-color:            transparent;
     text-color:                  @foreground-colour;
     children:                    [ "prompt", "entry" ];
 }
@@ -163,41 +163,26 @@ element {
     cursor:                      pointer;
 }
 element normal.normal {
-    background-color:            var(normal-background);
+    background-color:            transparent;
     text-color:                  var(normal-foreground);
 }
-element normal.urgent {
-    background-color:            var(urgent-background);
-    text-color:                  var(urgent-foreground);
+element alternate.normal {
+    background-color:            transparent;
+    text-color:                  var(normal-foreground);  
 }
 element normal.active {
-    background-color:            var(active-background);
+    background-color:            var(foreground-colour);
     text-color:                  var(active-foreground);
 }
 element selected.normal {
     background-color:            var(alternate-background);
     text-color:                  var(foreground-colour);
 }
-element selected.urgent {
-    background-color:            var(selected-urgent-background);
-    text-color:                  var(selected-urgent-foreground);
-}
 element selected.active {
-    background-color:            var(selected-active-background);
+    background-color:            var(alternate-active-background);
     text-color:                  var(selected-active-foreground);
 }
-element alternate.normal {
-    background-color:            var(alternate-normal-background);
-    text-color:                  var(alternate-normal-foreground);
-}
-element alternate.urgent {
-    background-color:            var(alternate-urgent-background);
-    text-color:                  var(alternate-urgent-foreground);
-}
-element alternate.active {
-    background-color:            var(alternate-active-background);
-    text-color:                  var(alternate-active-foreground);
-}
+
 element-icon {
     background-color:            transparent;
     text-color:                  inherit;
@@ -211,6 +196,7 @@ element-text {
     cursor:                      inherit;
     vertical-align:              0.5;
     horizontal-align:            0.0;
+    font:                        "mono bold 12";
 }
 
 /*****----- Mode Switcher -----*****/
