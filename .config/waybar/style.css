@@ -152,6 +152,8 @@ button.active {
     margin: 5px 0px 5px 0px;
 }
 
+
+
 #battery {
     background-color: #191919;
     color: #c8c8c8;
@@ -260,9 +262,6 @@ label:focus {
 
 tooltip {
   background-color: #191919;
-  border: none;
-  border-bottom: 8px solid #121212;
-  border-radius: 5px;
 }
 
 tooltip decoration {
