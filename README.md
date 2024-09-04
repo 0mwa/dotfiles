@@ -266,7 +266,7 @@ acpica atool brightnessctl cliphist cpio efibootmgr htop intel-ucode less libnot
 ### AUR
 
 ```shell
-bibata-cursor-theme cava cbonsai-git cmatrix-git grimblast-git hw-probe jetbrains-toolbox light nwg-look-bin papirus-folders-git qt5-styleplugins spicetify-cli spotify wg-client where-is-my-sddm-theme-git
+bibata-cursor-theme cava cbonsai-git cmatrix-git grimblast-git hiddify-next hw-probe jetbrains-toolbox light nwg-look-bin papirus-folders-git qt5-styleplugins spicetify-cli spotify wg-client where-is-my-sddm-theme-git
 ```
 
 ### Development Tools
