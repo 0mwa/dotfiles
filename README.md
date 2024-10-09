@@ -68,7 +68,7 @@ List of programs and tools I use.
 
 | Component | Program                                                                                                                |
 |-------------------|----------------------------------------------------------------------------------------------------------------|
-| Tile Compositer   | [hyprland](https://github.com/hyprwm/Hyprland)                                                                 |
+| Tile Compositor   | [hyprland](https://github.com/hyprwm/Hyprland)                                                                 |
 | Terminal          | [kitty](https://github.com/kovidgoyal/kitty)                                                                   |
 | Shell             | [fish](https://github.com/fish-shell/fish-shell) / [theme](https://github.com/IlanCosman/tide)                 |
 | Fetch             | [fastfetch](https://github.com/fastfetch-cli/fastfetch) / [icon](/.config/fastfetch/pic/earth.png)             |
